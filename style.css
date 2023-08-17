@@ -1,0 +1,383 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+}
+body{
+	background-color: #72A0C1;
+
+}
+html{
+	scroll-behavior: smooth;
+}
+section{
+	width: 100%;
+	height: 65vh;
+
+}
+section nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	left: 0;
+	background-color: #3B444B;
+    text-shadow: #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+    height: 70px;
+}
+
+section nav ul{
+	list-style: none;
+}
+section nav ul li{
+	display: inline-block;
+	margin: 0 15px;
+}
+section nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 17px;
+	transition: 0.1s;
+    margin-right: 20px;
+}
+section nav ul li a:hover{
+	width: 100%;
+	color: black;
+}
+section .main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	top: 130px;
+}
+section .main .men_text h1{
+	font-size: 55px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	font-family: mv boli;
+
+}
+section .main .men_text h1 span{
+	color: black;
+	margin-right: 15px;
+	font-family: mv boli;
+}	
+section .main .main_image img{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	border: 5px solid #cccccc;
+	margin-bottom: -100px;
+    
+} 
+section p{
+	width: 500px;
+	text-align: justify;
+	position: relative;
+	left: 130px;
+	bottom: 120px;
+	line-height: 22px;
+	margin-top: 250px;
+	margin-left: 70px;
+	font-size: 20px;
+}
+.Hobbies{
+	width: 100%;
+	padding: 70px 0;
+
+}
+.Hobbies h1{
+	font-size: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+.Hobbies h1 span{
+	margin-left: 15px;
+	color: black;
+	font-family: mv boli;
+
+}
+.Hobbies h1 span::after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: black;
+	display: block;
+	position: relative;
+	bottom: 15px;
+}
+.Hobbies .Hobbies_image_box{
+	width: 95%;
+	margin: 10px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+.Hobbies .Hobbies_image_box .Hobbies_image{
+	display: flex;
+	width: 450px;
+	height: 245px;
+	align-items: center;
+	justify-content: center;
+	background: black;
+
+}
+.Hobbies .Hobbies_image_box .Hobbies_image img{
+	width: 450px;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: 0.3s;
+}
+.Hobbies .Hobbies_image_box .Hobbies_image:hover img{
+	opacity: 0.4;
+
+}
+.Hobbies .Hobbies_image_box .Hobbies_image h3{
+	position: absolute;
+	font-size: 40px;
+	margin-bottom: 50px;
+	color: white;
+	font-family: polo;
+	z-index: 5;
+	opacity: 0;
+	transition: 0.3s;
+}
+.Hobbies .Hobbies_image_box .Hobbies_image:hover h3{
+	opacity: 1;
+}	
+.Project{
+	width: 100%;
+	height: 100vh;
+	padding: 70px 0;
+
+}
+.Project .Project_main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    margin-bottom: 60px;
+
+}
+.Project .Project_main .image img{
+	width: 400px;
+    height: 400px;
+    margin-top: 30px; 
+	margin-right: 20px;  
+}
+.Project h1{
+	font-size: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+.Project h1 span{
+	margin-left: 15px;
+	color: black;
+	font-family: mv boli;
+
+}
+.Project h1 span::after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: black;
+	display: block;
+	position: relative;
+	bottom: 15px;
+}
+
+.Youtuber{
+	width: 100%;
+	height: 100vh;
+	padding: 70px 0;
+	margin-bottom: 70px;
+	margin-top: -100px;
+}
+.Youtuber h1{
+	font-size: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.Youtuber h1 span{
+	margin-left: 15px;
+	color: black;
+	font-family: mv boli;
+
+}
+.Youtuber h1 span::after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: black;
+	display: block;
+	position: relative;
+	bottom: 15px;
+}
+.Youtuber .Youtuber_box{
+	width: auto;
+	margin: 70px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Youtuber .Youtuber_box .Youtuber_card{
+	width: 350px;
+	height: 485px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	padding: 8px 20px;
+	margin: 0 8px;
+	
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_profile{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: 0.3s;
+}
+.Youtuber .Youtuber_box .Youtuber_card:hover .Youtuber_profile{
+	transform: translateY(-60px);
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_profile img{
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	border: 5px solid #cccccc;
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_text{
+	text-align: center;
+
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_text .name{
+	color: #000;
+	transition: 0.3s;
+}
+.Youtuber .Youtuber_box .Youtuber_card:hover .Youtuber_text .name{
+	transform: translateY(-50px);
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_text .Youtuber_icon{
+	color: orange;
+	transition: 0.3s;
+}
+.Youtuber .Youtuber_box .Youtuber_card:hover .Youtuber_text .Youtuber_icon{
+	transform: translateY(-30px); 
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_text .Youtuber_social a{
+	margin: 5px 1px;
+	font-size: 15px;
+	opacity: 0;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.Youtuber .Youtuber_box .Youtuber_card:hover .Youtuber_text .Youtuber_social a{
+	opacity: 1;
+	transform: translateY(-10px);
+}
+.Youtuber .Youtuber_box .Youtuber_card .Youtuber_text p{
+	text-align: center;
+	line-height: 22px;
+	transition: 0.3s;
+}
+.Youtuber .Youtuber_box .Youtuber_card:hover .Youtuber_text p{
+	margin-top: 5px;
+
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	border-top: 3px solid #3B444B;
+}  
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+} 
+footer .container .about{
+    margin-right: 30px;
+}
+footer .container .about{
+    width: 40%;
+
+}
+footer .container .about h2{
+    position: relative;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5x;
+    left: 0;
+    width: 50px;
+    height: 2px;  
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.contacts{
+	width: calc(35% - 60px);
+	margin-right: 0 !important;
+}
+.contacts .contacts{
+	position: relative;
+}
+.contacts .contacts li{
+	display: flex;
+	margin-bottom: 16px;
+	margin-top: 20px;
+}
+.contacts .contacts li span:nth-child(1){
+	color: black;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contacts .contacts li a{
+	color: black;
+	text-decoration: none;
+}
+.contacts .contacts li a:hover{
+	color: black;
+}
+
+
